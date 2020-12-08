@@ -1,0 +1,39 @@
+header{
+	background: #efefef;
+	padding: 4px 0;
+	.top_header{
+		li{
+			a{
+				@extend %peratext;
+				font-size: 12px;
+				color: #7f7f7f;
+				margin: 0 1px;
+				text-transform: uppercase;
+					@media(max-width:767px){
+						font-size: 11px;
+						padding: 0 5px;
+				}
+
+					@media(max-width:480px){
+						font-size: 12px;
+
+				}
+			}
+		}
+		p{
+			@extend %peratext;
+			font-size: 12px;
+			color: #7f7f7f;
+			text-transform: uppercase;
+					@media(max-width:767px){
+						font-size: 11px;
+				}
+
+					@media(max-width:480px){
+						font-size: 12px;
+						margin-bottom: 5px;
+				}
+
+		}
+	}
+}

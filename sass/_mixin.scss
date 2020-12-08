@@ -1,0 +1,19 @@
+@mixin transilatey($amount){
+	-webkit-transform: translateY($amount);
+	-ms-transform: translateY($amount);
+	transform: translateY($amount);
+}
+
+@mixin transform($property){
+	-webkit-transform: ($property);
+	-ms-transform: ($property);
+	transform: ($property);
+}
+
+@mixin transition($time){
+	-webkit-transition-duration:  $time;
+	-o-transition-duration:  $time;
+	transition-duration:  $time;
+}
+
+

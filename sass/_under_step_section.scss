@@ -1,0 +1,53 @@
+.under_step_section{
+
+	background: $primarytheme;
+	padding: 43px 0;
+			@media(max-width:1399px){
+				padding: 40px 0;
+			}
+			@media(max-width:767px){
+				padding: 25px 0;
+			}
+
+
+	.under_step_inner{
+		h4{
+			font-size: 50px;
+			font-family: 'Raleway', sans-serif;
+			color: $whitecolor;
+			font-weight: 700;
+			margin-bottom: 0;
+			padding-bottom: 25px;
+			@media(max-width:991px){
+				font-size: 45px;
+				padding-bottom: 20px;
+			}
+			@media(max-width:767px){
+				font-size: 30px;
+    			padding-bottom: 10px;
+			}
+
+		}
+
+		strong{
+			font-size: 18px;
+			font-family: 'Raleway', sans-serif;
+			color: $whitecolor;
+			font-weight: 500;
+			text-transform: uppercase;
+			@media(max-width:991px){
+				font-size: 15px;
+			}
+			@media(max-width:767px){
+				font-size: 14px;
+				/*margin-bottom:20px;*/
+				display: block;
+			}
+			@media(max-width:575px){
+				margin-bottom:20px;
+			}
+		}
+
+
+	}
+}

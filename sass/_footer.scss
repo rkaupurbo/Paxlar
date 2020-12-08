@@ -1,0 +1,40 @@
+footer{
+	padding: 15px 0;
+	background: #000000; 
+	p{
+		@extend %peratext;
+		font-size: 12px;
+				@media(max-width:991px){
+					font-size: 11px;
+				}
+			@media(max-width:767px){
+				font-size: 13px;
+				margin-bottom: 10px;
+				text-align: center;
+			}
+				@media(max-width:575px){
+				margin-bottom: 0px;
+			}
+
+	}
+
+	ul{
+		li{
+				@media(max-width:991px){
+					padding: 0 5px!important;
+				}
+			@media(max-width:767px){
+				font-size: 13px;
+				
+			}
+
+			a{
+				@extend %peratext;
+				text-transform: uppercase;
+				@media(max-width:575px){
+				display: none;
+			}
+			}
+		}
+	}
+}

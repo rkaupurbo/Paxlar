@@ -1,0 +1,126 @@
+.contact_section{
+
+	background: #333 url(../img/fbanner.png) center no-repeat;
+	background-size: cover;
+	padding: 52px 0 25px;
+	background-blend-mode: overlay;
+
+	&:hover .heading::before{
+		width: 50px;
+	}
+
+	.heading{
+		position: relative;
+		padding-bottom: 20px;
+    	margin-bottom: 75px;
+				    	@media(max-width:1399px){
+				    	padding-bottom: 17px;
+    					margin-bottom: 65px;	
+				}
+					@media(max-width:1199px){
+						padding-bottom: 15px;
+    					margin-bottom: 55px;
+					}
+					@media(max-width:991px){
+						padding-bottom: 15px;
+    					margin-bottom: 50px;
+					}
+					@media(max-width:767px){
+						padding-bottom: 15px;
+    					margin-bottom: 40px;
+					}
+
+					@media(max-width:575px){
+					padding-bottom: 16px;
+    				margin-bottom: 30px;
+					}
+
+		h2{
+			@extend %subheading;
+			font-size: 24px;
+			text-transform: uppercase;
+			font-weight: 500;
+			margin-bottom: 0px;
+			color: $whitecolor;
+			@media(max-width:767px){
+						font-size: 20px;
+					}
+		}
+
+
+		&::before{
+			@extend %underline;
+		}
+			
+	}
+
+	input{
+		background: transparent;
+		border: 1px solid $whitecolor;
+		color: $whitecolor;
+
+		&::placeholder{
+			color: $whitecolor;}
+			&:focus{
+				background: transparent;
+				border-color: transparent;
+				box-shadow: 0;
+			}
+			&:active{
+				border-color: #fff;
+				box-shadow: 0;
+			}
+	}
+
+	textarea{
+		background: transparent;
+		border: 1px solid $border;
+
+		&::placeholder{
+			color: $whitecolor;}
+
+			&:focus{
+				background: transparent;
+				border-color: transparent;
+				box-shadow: 0;
+			}
+			&:active{
+				border-color: #fff;
+				box-shadow: 0;
+			}
+	}
+
+	.btn-custom{
+		@extend %btn-custom;
+		width: 154px;
+    	height: 44px;
+    	margin-top: 45px;
+    				@media(max-width:1199px){
+						width: 135px;
+				    	height: 40px;
+					}
+					@media(max-width:991px){
+						width: 130px;
+				    	height: 39px;
+					}
+					@media(max-width:767px){
+					width: 125px;
+				    height: 37px;
+					}
+
+
+					@media(max-width:575px){
+					width: 118px;
+				    height: 36px;
+				    margin-top: 30px;
+					}
+
+
+    	&:hover{
+    		@extend %hvr;
+    	}
+	}
+
+
+
+}
